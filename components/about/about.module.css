@@ -45,7 +45,9 @@
 }
 
 .radialImg {
+  -o-object-fit: contain;
   object-fit: contain;
+  -o-object-position: top;
   object-position: top;
   filter: opacity(0.2);
 }
