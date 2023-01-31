@@ -16,8 +16,7 @@
 
 .isoRight,
 .isoLeft {
-  -o-object-fit: scale-down;
-  object-fit: scale-down;
+  object-fit: contain;
   transition: all 0.5s;
   width: 50%;
   height: -moz-fit-content;
