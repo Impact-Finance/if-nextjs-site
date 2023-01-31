@@ -1,0 +1,102 @@
+.heroContainer {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding-right: 2rem;
+  background: linear-gradient(
+    315deg,
+    rgba(var(--color-main-1-rgb), 0.7) 3%,
+    rgba(var(--color-main-2-rgb), 0.7) 38%,
+    rgba(var(--color-main-3-rgb), 0.4) 68%,
+    rgba(var(--color-accent-1-rgb), 0.1) 98%
+  );
+  animation: gradient 10s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+.background {
+  object-fit: cover;
+  z-index: -1;
+}
+
+.graphicContainer {
+  position: relative;
+  width: 50%;
+  top: 25%;
+}
+
+.isoGraphic {
+  position: absolute;
+  object-fit: contain;
+  filter: saturate(1.3);
+  animation: float 10s linear infinite;
+}
+
+.textContainer {
+  padding-left: 75px;
+  display: flex !important;
+  flex: 1;
+  flex-direction: column !important;
+  justify-content: center;
+}
+
+.mainHead {
+  font-size: 4rem;
+  letter-spacing: 3px;
+  color: rgb(var(--color-accent-1-rgb));
+}
+
+.subHead {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  line-height: 2.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+}
+
+.primaryBtn {
+  color: rgb(var(--color-accent-1-rgb));
+  border-radius: var(--border-radius);
+  background-color: rgba(var(--color-accent-1-rgb), 0.1);
+  border: 1px solid rgb(var(--color-accent-1-rgb));
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 10px 15px;
+  margin-top: 30px;
+  width: fit-content;
+  transition: all 0.3s;
+}
+
+.primaryBtn:hover {
+  cursor: pointer;
+  transform: translateX(7px);
+  filter: opacity(0.75);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}

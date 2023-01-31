@@ -1,0 +1,49 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  padding: 0 50px;
+  height: 90px;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  transition: all 0.3s;
+}
+
+.navbarScrolled {
+  background-color: rgba(var(--color-main-2-rgb), 0.6);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logoContainer {
+  position: relative;
+  width: 180px;
+  height: 100%;
+}
+
+.logo {
+  object-fit: contain;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.navLinks {
+  display: flex;
+}
+
+.navItem {
+  color: rgb(var(--color-accent-1-rgb));
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0 35px;
+  transition: all 0.3s;
+}
+
+.navItem:hover {
+  cursor: pointer;
+  filter: opacity(0.65);
+}

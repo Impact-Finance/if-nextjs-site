@@ -1,0 +1,37 @@
+.productsContainer {
+  position: relative;
+  height: 500px;
+  width: 100vw;
+  padding: 75px;
+  background-color: rgba(var(--color-dark-rgb), 0.8);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.triangle {
+  object-fit: contain;
+  filter: opacity(0.05);
+  transform: scale(2);
+  transition: all 1s;
+}
+
+.productsContainer:hover > .triangle {
+  transform: scale(2.4) rotate(10deg);
+}
+
+.headline {
+  color: rgb(var(--color-accent-1-rgb));
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.itemBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  height: 300px;
+}

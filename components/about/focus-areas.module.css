@@ -1,0 +1,23 @@
+.focusContainer {
+  position: relative;
+  height: fit-content;
+  width: 100vw;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.headline {
+  color: rgb(var(--color-accent-1-rgb));
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  height: fit-content;
+}
