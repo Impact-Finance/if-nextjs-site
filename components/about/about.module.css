@@ -6,6 +6,8 @@
   align-items: center;
   height: 60vh;
   width: 80vw;
+  max-width: 1500px;
+  padding: 50px 8%;
   margin: 75px 0 200px 0;
   border-top: 1px solid rgba(var(--color-accent-1-rgb), 0.4);
   border-bottom: 1px solid rgba(var(--color-accent-1-rgb), 0.4);
@@ -53,7 +55,6 @@
 }
 
 .text {
-  width: 70vw;
   letter-spacing: 1px;
   font-size: 2rem;
   text-align: center;

@@ -6,6 +6,7 @@
   align-items: center;
   height: 60vh;
   width: 80vw;
+  max-width: 1500px;
   margin: 200px 0;
   border-top: 1px solid rgba(var(--color-accent-1-rgb), 0.4);
   border-bottom: 1px solid rgba(var(--color-accent-1-rgb), 0.4);
@@ -62,6 +63,7 @@
 
 .row {
   display: flex;
+  justify-content: space-between;
   height: 60%;
 }
 

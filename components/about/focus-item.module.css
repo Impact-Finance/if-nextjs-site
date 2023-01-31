@@ -5,6 +5,7 @@
   height: -moz-fit-content;
   height: fit-content;
   width: 80vw;
+  max-width: 1500px;
   background-color: rgba(var(--color-dark-rgb), 0.4);
   margin: 75px 0;
   border-radius: 25px;

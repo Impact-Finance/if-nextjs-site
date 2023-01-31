@@ -19,6 +19,7 @@
   border-top: 2px solid #68eaffb3;
   border-radius: 50px;
   width: 80vw;
+  max-width: 1500px;
 }
 
 .row {

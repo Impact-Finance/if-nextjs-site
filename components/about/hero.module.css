@@ -1,7 +1,9 @@
 .heroContainer {
   position: relative;
   display: flex;
+  justify-content: center;
   height: 100vh;
+  max-height: 1000px;
   width: 100%;
   overflow: hidden;
   padding-right: 2rem;
@@ -27,6 +29,7 @@
   position: relative;
   width: 50%;
   top: 25%;
+  max-width: 800px;
 }
 
 .isoGraphic {
@@ -43,6 +46,7 @@
   flex: 1;
   flex-direction: column !important;
   justify-content: center;
+  max-width: 800px;
 }
 
 .mainHead {

@@ -42,41 +42,43 @@ const Navbar = ({
           ? `${styles.navbar} ${styles.navbarScrolled}`
           : styles.navbar
       }>
-      <Fade
-        className={styles.logoContainer}
-        direction="left"
-        duration={1500}>
-        <Image
-          className={styles.logo}
-          onClick={scrollTop}
-          src={logo}
-          alt="Impact Finance logo"
-          fill
-          sizes="20vw"
-        />
-      </Fade>
-      <ul className={styles.navLinks}>
+      <div className={styles.innerShell}>
         <Fade
-          duration={750}
-          cascade
-          direction="right">
-          <li
-            className={styles.navItem}
-            onClick={portfolioScroll}>
-            Portfolio
-          </li>
-          <li
-            className={styles.navItem}
-            onClick={teamScroll}>
-            Team
-          </li>
-          <li
-            className={styles.navItem}
-            onClick={contactScroll}>
-            Contact
-          </li>
+          className={styles.logoContainer}
+          direction="left"
+          duration={1500}>
+          <Image
+            className={styles.logo}
+            onClick={scrollTop}
+            src={logo}
+            alt="Impact Finance logo"
+            fill
+            sizes="20vw"
+          />
         </Fade>
-      </ul>
+        <ul className={styles.navLinks}>
+          <Fade
+            duration={750}
+            cascade
+            direction="right">
+            <li
+              className={styles.navItem}
+              onClick={portfolioScroll}>
+              Portfolio
+            </li>
+            <li
+              className={styles.navItem}
+              onClick={teamScroll}>
+              Team
+            </li>
+            <li
+              className={styles.navItem}
+              onClick={contactScroll}>
+              Contact
+            </li>
+          </Fade>
+        </ul>
+      </div>
     </div>
   );
 };

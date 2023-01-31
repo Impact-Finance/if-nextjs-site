@@ -25,8 +25,8 @@ const FocusItem = ({
           <Image
             src={image}
             alt={title}
-            height={300}
-            width={375}
+            height={350}
+            width={600}
             className={styles.isoRight}
           />
           <Image
@@ -64,8 +64,8 @@ const FocusItem = ({
           <Image
             src={image}
             alt={title}
-            height={300}
-            width={375}
+            height={350}
+            width={600}
             className={styles.isoLeft}
           />
           <Image
