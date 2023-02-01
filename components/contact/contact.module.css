@@ -50,6 +50,7 @@
 }
 
 .cylinder {
+  -o-object-fit: contain;
   object-fit: contain;
   filter: opacity(0.1);
   transform: scale(2) rotate(45deg);
@@ -70,6 +71,11 @@
   border-bottom: 1px solid rgba(var(--color-accent-1-rgb), 0.5);
   font-size: 1.5rem;
   margin-top: 5px;
+}
+
+.inputBox::-moz-placeholder {
+  color: rgba(var(--color-accent-1-rgb), 0.3);
+  font-size: 1.2rem;
 }
 
 .inputBox::placeholder {
@@ -123,6 +129,7 @@
   font-weight: 700;
   padding: 10px 15px;
   margin: 20px 0;
+  width: -moz-fit-content;
   width: fit-content;
   transition: all 0.3s;
 }

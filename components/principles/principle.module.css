@@ -10,6 +10,7 @@
 }
 
 .image {
+  -o-object-fit: contain;
   object-fit: contain;
   filter: opacity(0.5) saturate(1.6) contrast(1.7);
 }

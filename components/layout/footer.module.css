@@ -86,6 +86,7 @@
 
 @media (max-width: 768px) {
   .footer {
+    height: -moz-fit-content;
     height: fit-content;
   }
 
