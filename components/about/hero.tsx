@@ -27,6 +27,8 @@ const Hero = ({ focusScroll }: HeroProps) => {
           alt="isometric-graphic"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
+          placeholder="blur"
+          priority
         />
       </div>
       <div className={styles.textContainer}>
