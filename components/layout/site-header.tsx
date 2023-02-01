@@ -48,7 +48,7 @@ const SiteHeader = () => {
       />
       <meta
         name="twitter:image"
-        content=""
+        content="https://www.impact-finance.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmeta-image.a6da3db7.jpg&w=3840&q=75"
       />
 
       {/* <!-- Open Graph Meta Tags --> */}
@@ -74,7 +74,7 @@ const SiteHeader = () => {
       />
       <meta
         property="og:image"
-        content=""
+        content="https://www.impact-finance.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmeta-image.a6da3db7.jpg&w=3840&q=75"
       />
     </Head>
   );
