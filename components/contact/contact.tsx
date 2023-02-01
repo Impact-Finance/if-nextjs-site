@@ -4,6 +4,7 @@ import { useState, ChangeEvent, MouseEvent } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import ReCAPTCHA from 'react-google-recaptcha';
 
+import useWindowDimensions from '@/hooks/useWindowDimensions';
 import cube from '@/public/shapes/cubic-grid.png';
 import prism from '@/public/shapes/prismatic-grid.png';
 import cylinder from '@/public/shapes/pipe-grid.png';
@@ -20,6 +21,8 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [pending, setPending] = useState(false);
   const [error, setError] = useState(false);
+
+  const { height, width } = useWindowDimensions();
 
   function passCaptcha() {
     setPassed(true);
@@ -163,6 +166,7 @@ const Contact = () => {
                 <ReCAPTCHA
                   sitekey={captchaKey}
                   onChange={passCaptcha}
+                  size={width < 400 ? 'compact' : 'normal'}
                 />
               </div>
               <div className={styles.submit}>
