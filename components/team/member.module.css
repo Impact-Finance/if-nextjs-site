@@ -144,11 +144,8 @@
     max-width: 300px;
   }
   .advisorText > .name {
-    display: inline-block;
-    color: rgb(var(--color-accent-1-rgb));
     font-size: 1.5rem;
-    letter-spacing: 1px;
-    margin: 10px 0;
+    letter-spacing: 0px;
   }
 
   .advisorText > .title {
@@ -157,8 +154,7 @@
   }
 
   .advisorText > .degree {
-    filter: opacity(0.75);
-    margin: 5px 0;
+    font-size: 1rem;
   }
 }
 
