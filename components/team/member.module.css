@@ -1,10 +1,25 @@
+.personBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .fullTimer,
 .advisor {
   position: relative;
   border-bottom: 1px solid #68eaffb3;
   border-radius: 30px;
+}
+
+.fullTimer {
   height: 200px;
   width: 300px;
+}
+
+.advisor {
+  height: 150px;
+  width: 200px;
 }
 
 .memberImage {
@@ -13,16 +28,24 @@
   transition: all 0.3s;
 }
 
-.text {
+.advisorText,
+.fullTimerText {
   display: flex;
   text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.fullTimerText {
   max-width: 300px;
 }
 
-.name {
+.advisorText {
+  max-width: 275px;
+}
+
+.fullTimerText > .name {
   display: inline-block;
   color: rgb(var(--color-accent-1-rgb));
   font-size: 1.5rem;
@@ -30,14 +53,33 @@
   margin: 10px 0;
 }
 
-.title {
+.fullTimerText > .title {
   font-size: 1.2rem;
   margin: 5px 0;
 }
 
-.degree {
+.fullTimerText > .degree {
   filter: opacity(0.75);
   margin: 5px 0;
+}
+
+.advisorText > .name {
+  display: inline-block;
+  color: rgb(var(--color-accent-1-rgb));
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.advisorText > .title {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.advisorText > .degree {
+  filter: opacity(0.75);
+  margin: 5px 0;
+  font-size: 0.9rem;
 }
 
 .socials {
@@ -52,4 +94,80 @@
 
 .socials a:hover {
   filter: opacity(0.75);
+}
+
+@media (max-width: 1200px) {
+  .advisorText > .name {
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+  }
+
+  .advisorText > .title {
+    font-size: 1rem;
+  }
+
+  .advisorText > .degree {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 999px) {
+  .advisorText > .name {
+    font-size: 1rem;
+    letter-spacing: 0px;
+  }
+
+  .advisorText > .title {
+    font-size: 0.8rem;
+  }
+
+  .advisorText > .degree {
+    font-size: 0.75rem;
+  }
+
+  .advisorText > .socials {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .personBox {
+    margin: 30px 15px;
+    margin-bottom: 30px;
+  }
+
+  .advisor {
+    height: 200px;
+    width: 300px;
+  }
+  .advisorText {
+    max-width: 300px;
+  }
+  .advisorText > .name {
+    display: inline-block;
+    color: rgb(var(--color-accent-1-rgb));
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin: 10px 0;
+  }
+
+  .advisorText > .title {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+
+  .advisorText > .degree {
+    filter: opacity(0.75);
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 425px) {
+}
+
+@media (max-width: 375px) {
+  .fullTimer,
+  .advisor {
+    width: 275px;
+  }
 }

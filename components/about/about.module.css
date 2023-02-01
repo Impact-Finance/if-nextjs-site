@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   height: 60vh;
+  min-height: fit-content;
   width: 80vw;
   max-width: 1500px;
   padding: 50px 8%;
@@ -84,4 +85,73 @@
   100% {
     transform: translateY(0);
   }
+}
+
+@media (max-width: 1200px) {
+  .aboutContainer {
+    width: 90vw;
+    padding: 50px 3%;
+  }
+  .text {
+    letter-spacing: 0px;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+
+  .highlighted {
+    margin-top: 20px;
+  }
+
+  .sphere,
+  .prism {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 999px) {
+  .aboutContainer {
+    height: 50vh;
+  }
+  .text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    height: 45vh;
+  }
+  .text {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+  }
+  .sphere,
+  .prism {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sphere {
+    top: -50px;
+    left: -30px;
+    animation: rotateRight 45s linear infinite;
+  }
+
+  .prism {
+    bottom: -50px;
+    right: -30px;
+    animation: float 10s linear infinite;
+  }
+}
+
+@media (max-width: 425px) {
+  .text {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
+
+@media (max-width: 375px) {
 }

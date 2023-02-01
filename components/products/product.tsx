@@ -24,10 +24,22 @@ const Product = ({
         src={image}
         alt={title}
         fill
-        sizes="30vw"
+        sizes="(max-width: 768px) 70vw, 40vw"
       />
       <div className={styles.hoverContent}>
         <h3 className={styles.description}>{description}</h3>
+        {link && (
+          <a
+            className={styles.link}
+            href={link}
+            target="_blank"
+            rel="noreferrer">
+            Learn More
+          </a>
+        )}
+        {release && <p className={styles.release}>{release}</p>}
+      </div>
+      <div className={styles.smallMediaContent}>
         {link && (
           <a
             className={styles.link}

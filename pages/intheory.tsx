@@ -1,33 +1,19 @@
 import { useRef } from 'react';
+import Head from 'next/head';
 
-import Hero from '@/components/about/hero';
-import FocusAreas from '@/components/about/focus-areas';
-import About from '@/components/about/about';
-import Products from '@/components/products/products';
-import Principles from '@/components/principles/principles';
-import Supporters from '@/components/supporters/supporters';
-import Team from '@/components/team/team';
-import Contact from '@/components/contact/contact';
 import styles from '@/styles/Home.module.css';
 import Footer from '@/components/layout/footer';
 import Navbar from '@/components/layout/navbar';
 import SiteHeader from '@/components/layout/site-header';
 
-export default function Home() {
+export default function Intheory() {
   const portfolio = useRef<HTMLDivElement>(null);
-  const focusAreas = useRef<HTMLDivElement>(null);
   const team = useRef<HTMLDivElement>(null);
   const contact = useRef<HTMLDivElement>(null);
 
   const portfolioScroll = () => {
     if (portfolio.current) {
       portfolio.current.scrollIntoView({ block: 'center' });
-    }
-  };
-
-  const focusScroll = () => {
-    if (focusAreas.current) {
-      focusAreas.current.scrollIntoView({ block: 'start' });
     }
   };
 
@@ -46,27 +32,27 @@ export default function Home() {
   return (
     <>
       <SiteHeader />
+      <Head>
+        <meta
+          http-equiv="Refresh"
+          content="0; url='https://www.intheory.science'"
+        />
+      </Head>
       <main className={styles.main}>
         <Navbar
           portfolioScroll={portfolioScroll}
           teamScroll={teamScroll}
           contactScroll={contactScroll}
         />
-        <Hero focusScroll={focusScroll} />
-        <div ref={focusAreas}>
-          <FocusAreas />
-        </div>
-        <About />
-        <div ref={portfolio}>
-          <Products />
-        </div>
-        <Principles />
-        <Supporters />
-        <div ref={team}>
-          <Team />
-        </div>
-        <div ref={contact}>
-          <Contact />
+        <div
+          style={{
+            height: '100vh',
+            width: '100vw',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <h3>Redirecting... hang tight</h3>
         </div>
         <Footer />
       </main>

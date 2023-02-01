@@ -21,7 +21,7 @@ const Supporter = ({ title, image, link, brighten }: SupporterProps) => {
           src={image}
           alt={title}
           fill
-          sizes="20vw"
+          sizes="(max-width: 425px) 70vw, (max-width: 768px) 50vw, 20vw"
         />
       </div>
     </a>

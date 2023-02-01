@@ -56,3 +56,45 @@
   cursor: pointer;
   filter: opacity(0.65);
 }
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 999px) {
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 30px;
+  }
+  .innerShell {
+    justify-content: space-between;
+  }
+  .navItem {
+    margin: 0;
+  }
+  .navItem:nth-child(1),
+  .navItem:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar {
+    height: 60px;
+  }
+  .logoContainer {
+    position: relative;
+    width: 130px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .innerShell {
+    justify-content: center;
+  }
+  .navLinks {
+    display: none;
+  }
+}

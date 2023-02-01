@@ -5,3 +5,18 @@
   align-items: center;
   min-height: 100vh;
 }
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 999px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 425px) {
+}
+
+@media (max-width: 375px) {
+}

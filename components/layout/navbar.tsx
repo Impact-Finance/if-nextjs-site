@@ -53,7 +53,12 @@ const Navbar = ({
             src={logo}
             alt="Impact Finance logo"
             fill
-            sizes="20vw"
+            sizes="(max-width: 375px) 60vw, 
+            (max-width: 425px) 60vw, 
+            (max-width: 768px) 40vw, 
+            (max-width: 999px) 30vw,
+            (max-width: 1200px) 20vw,
+            20vw"
           />
         </Fade>
         <ul className={styles.navLinks}>

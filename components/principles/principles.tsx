@@ -37,7 +37,7 @@ const Principles = () => {
           src={radial}
           alt="radial-background"
           fill
-          sizes="100vw"
+          sizes="90vw"
         />
         <Fade
           duration={1000}

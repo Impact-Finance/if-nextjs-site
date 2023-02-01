@@ -42,7 +42,7 @@ const Team = () => {
             ))}
           </Fade>
         </div>
-        {/* <div className={styles.row}>
+        <div className={styles.row}>
           <Fade
             duration={1000}
             triggerOnce
@@ -56,7 +56,7 @@ const Team = () => {
               />
             ))}
           </Fade>
-        </div> */}
+        </div>
       </div>
     </>
   );

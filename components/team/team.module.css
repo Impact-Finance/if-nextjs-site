@@ -58,3 +58,56 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 1200px) {
+  .teamContainer {
+    padding: 30px;
+    width: 90vw;
+  }
+}
+
+@media (max-width: 999px) {
+  .sphere {
+    width: 120px;
+    height: 120px;
+    top: -75px;
+    left: 5px;
+  }
+  .teamContainer {
+    padding: 30px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .teamContainer {
+    width: 95vw;
+  }
+  .sphere {
+    width: 100px;
+    height: 100px;
+    left: -20px;
+    top: -60px;
+  }
+  .row {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .title {
+    font-size: 1.45rem;
+    letter-spacing: 0px;
+    width: 80vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 1.2rem;
+  }
+}

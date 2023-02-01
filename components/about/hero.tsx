@@ -26,7 +26,7 @@ const Hero = ({ focusScroll }: HeroProps) => {
           src={isoGraphic}
           alt="isometric-graphic"
           fill
-          sizes="50vw"
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
       </div>
       <div className={styles.textContainer}>

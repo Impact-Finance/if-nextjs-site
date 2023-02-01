@@ -16,7 +16,12 @@ const Principle = ({ image, title }: PrincipleProps) => {
         src={image}
         alt={title}
         fill
-        sizes="30vw"
+        sizes="(max-width: 375px) 60vw, 
+        (max-width: 425px) 60vw, 
+        (max-width: 768px) 50vw, 
+        (max-width: 999px) 30vw,
+        (max-width: 1200px) 20vw,
+        20vw"
       />
       <Fade
         duration={2000}

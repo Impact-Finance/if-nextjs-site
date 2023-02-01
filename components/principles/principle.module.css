@@ -26,3 +26,52 @@
   letter-spacing: 1px;
   color: #ffffffdd;
 }
+
+@media (max-width: 1200px) {
+  .principleBox {
+    width: 15vw;
+    margin: 0px 30px;
+  }
+
+  .title {
+    padding: 20px 20px;
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 999px) {
+  .principleBox {
+    width: 15vw;
+    margin: 0px 30px;
+  }
+
+  .title {
+    padding: 15px 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .principleBox {
+    width: 30vw;
+    margin: 30px;
+    height: 140px;
+  }
+
+  .title {
+    padding: 15px 15px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .principleBox {
+    width: 50vw;
+    margin: 30px 30px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 375px) {
+}

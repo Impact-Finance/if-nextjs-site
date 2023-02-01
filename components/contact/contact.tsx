@@ -106,7 +106,7 @@ const Contact = () => {
               src={cylinder}
               alt="cylinder-background"
               fill
-              sizes="60vw"
+              sizes="(max-width: 768px) 40vw, 60vw"
             />
             <form>
               <div className={styles.row1}>
