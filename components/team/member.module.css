@@ -156,6 +156,10 @@
   .advisorText > .degree {
     font-size: 1rem;
   }
+
+  .advisorText > .socials {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 425px) {
