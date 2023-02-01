@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useState, ChangeEvent, MouseEvent } from 'react';
+import { useState, ChangeEvent, MouseEvent, useEffect } from 'react';
 
 import { Fade } from 'react-awesome-reveal';
 import ReCAPTCHA from 'react-google-recaptcha';
@@ -161,9 +161,10 @@ const Contact = () => {
               </div>
               <div className={styles.captcha}>
                 <ReCAPTCHA
+                  className={styles.captcha}
                   sitekey={captchaKey}
                   onChange={passCaptcha}
-                  size="compact"
+                  size="normal"
                 />
               </div>
               <div className={styles.submit}>
