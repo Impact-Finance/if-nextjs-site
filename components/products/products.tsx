@@ -20,8 +20,7 @@ const Products = () => {
       <Fade
         duration={1000}
         triggerOnce
-        direction="down"
-        delay={250}>
+        direction="down">
         <h2 className={styles.headline}>Current Projects</h2>
       </Fade>
       <div className={styles.itemBox}>
@@ -29,8 +28,7 @@ const Products = () => {
           duration={1000}
           triggerOnce
           direction="up"
-          cascade
-          delay={250}>
+          cascade>
           <Product
             title="inTheory Research"
             image={intheory}

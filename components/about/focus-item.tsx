@@ -41,8 +41,7 @@ const FocusItem = ({
               duration={750}
               triggerOnce
               direction="right"
-              cascade
-              delay={150}>
+              cascade>
               <h3 className={styles.title}>{title}</h3>
               <p className={styles.description}>{description}</p>
             </Fade>
@@ -55,8 +54,7 @@ const FocusItem = ({
               duration={750}
               triggerOnce
               direction="left"
-              cascade
-              delay={150}>
+              cascade>
               <h3 className={styles.title}>{title}</h3>
               <p className={styles.description}>{description}</p>
             </Fade>

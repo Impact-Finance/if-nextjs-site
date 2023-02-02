@@ -27,7 +27,7 @@ const Principle = ({ image, title }: PrincipleProps) => {
         duration={2000}
         triggerOnce
         direction="down"
-        delay={1000}>
+        delay={500}>
         <h3 className={styles.title}>{title}</h3>
       </Fade>
     </div>

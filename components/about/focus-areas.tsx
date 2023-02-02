@@ -15,8 +15,7 @@ const FocusAreas = () => {
       <Fade
         duration={1000}
         triggerOnce
-        direction="down"
-        delay={250}>
+        direction="down">
         <h2 className={styles.headline}>Designing solutions for...</h2>
       </Fade>
       <div className={styles.items}>
@@ -24,8 +23,7 @@ const FocusAreas = () => {
           duration={1000}
           triggerOnce
           direction="up"
-          cascade
-          delay={100}>
+          cascade>
           <FocusItem
             title="Decentralized Science"
             image={desci}

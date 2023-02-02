@@ -15,8 +15,7 @@ const Principles = () => {
   return (
     <Fade
       duration={1500}
-      triggerOnce
-      delay={250}>
+      triggerOnce>
       <div className={styles.principlesContainer}>
         <Image
           src={cube}

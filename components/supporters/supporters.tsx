@@ -18,8 +18,7 @@ const Supporters = () => {
       <Fade
         duration={1000}
         triggerOnce
-        direction="down"
-        delay={250}>
+        direction="down">
         <h3 className={styles.title}>Media and Support</h3>
       </Fade>
       <div className={styles.supportContainer}>
@@ -35,7 +34,6 @@ const Supporters = () => {
             duration={1000}
             triggerOnce
             direction="up"
-            delay={250}
             cascade>
             <Supporter
               title="AngelBlock"
@@ -68,7 +66,6 @@ const Supporters = () => {
             duration={1000}
             triggerOnce
             direction="up"
-            delay={250}
             cascade>
             <Supporter
               title="Business Wire"
