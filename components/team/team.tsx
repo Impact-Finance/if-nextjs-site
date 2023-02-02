@@ -16,7 +16,7 @@ const Team = () => {
         duration={1000}
         triggerOnce
         direction="down"
-        delay={500}>
+        delay={250}>
         <h3 className={styles.title}>Core Team</h3>
       </Fade>
       <div className={styles.teamContainer}>
@@ -32,7 +32,7 @@ const Team = () => {
             duration={1000}
             triggerOnce
             direction="up"
-            delay={500}
+            delay={250}
             cascade>
             {fullTimers.map(person => (
               <Member
@@ -42,12 +42,12 @@ const Team = () => {
             ))}
           </Fade>
         </div>
-        <div className={styles.row}>
+        {/* <div className={styles.row}>
           <Fade
             duration={1000}
             triggerOnce
             direction="up"
-            delay={500}
+            delay={250}
             cascade>
             {advisors.map(person => (
               <Member
@@ -56,7 +56,7 @@ const Team = () => {
               />
             ))}
           </Fade>
-        </div>
+        </div> */}
       </div>
     </>
   );

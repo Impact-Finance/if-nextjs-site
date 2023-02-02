@@ -19,7 +19,7 @@ const Supporters = () => {
         duration={1000}
         triggerOnce
         direction="down"
-        delay={500}>
+        delay={250}>
         <h3 className={styles.title}>Media and Support</h3>
       </Fade>
       <div className={styles.supportContainer}>
@@ -35,7 +35,7 @@ const Supporters = () => {
             duration={1000}
             triggerOnce
             direction="up"
-            delay={500}
+            delay={250}
             cascade>
             <Supporter
               title="AngelBlock"
@@ -68,7 +68,7 @@ const Supporters = () => {
             duration={1000}
             triggerOnce
             direction="up"
-            delay={500}
+            delay={250}
             cascade>
             <Supporter
               title="Business Wire"

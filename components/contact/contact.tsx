@@ -78,13 +78,13 @@ const Contact = () => {
         duration={1000}
         triggerOnce
         direction="down"
-        delay={500}>
+        delay={250}>
         <h3 className={styles.headline}>Send us a message!</h3>
       </Fade>
       <Fade
         duration={1000}
         triggerOnce
-        delay={500}>
+        delay={250}>
         <div className={styles.outerShell}>
           <Image
             src={cube}

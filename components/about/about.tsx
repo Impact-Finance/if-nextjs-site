@@ -11,7 +11,7 @@ const About = () => {
     <Fade
       duration={1500}
       triggerOnce
-      delay={500}>
+      delay={250}>
       <div className={styles.aboutContainer}>
         <Image
           src={sphere}
@@ -38,7 +38,7 @@ const About = () => {
           duration={2000}
           triggerOnce
           direction="down"
-          delay={500}
+          delay={250}
           cascade>
           <p className={styles.text}>
             Today&apos;s global challenges require a new type of cooperative

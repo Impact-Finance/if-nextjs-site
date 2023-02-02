@@ -21,7 +21,7 @@ const Products = () => {
         duration={1000}
         triggerOnce
         direction="down"
-        delay={500}>
+        delay={250}>
         <h2 className={styles.headline}>Current Projects</h2>
       </Fade>
       <div className={styles.itemBox}>
@@ -30,7 +30,7 @@ const Products = () => {
           triggerOnce
           direction="up"
           cascade
-          delay={750}>
+          delay={250}>
           <Product
             title="inTheory Research"
             image={intheory}
