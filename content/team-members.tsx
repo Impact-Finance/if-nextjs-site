@@ -43,7 +43,7 @@ const teamArray = [
   {
     advisor: true,
     name: 'Terrisa Duenas, PhD',
-    title: 'Advisor - Science & EdTech',
+    title: 'Advisor - Science & Academia',
     image: terrisa,
     degree: 'PhD Mechanical Engineering',
     description: 'Current: Founder & CEO at ESTE Leverage',
@@ -53,7 +53,7 @@ const teamArray = [
   {
     advisor: true,
     name: 'Eric Muckley, PhD',
-    title: 'Advisor - Research & Academia',
+    title: 'Advisor - System Design',
     image: eric,
     degree: 'PhD Energy Science and Engineering',
     description: 'Current: Research Scientist at Citrine Informatics',
