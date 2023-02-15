@@ -39,7 +39,7 @@ const Products = () => {
           <Product
             title="IF Swap"
             image={swap}
-            description="A bridgeless interchain DEX for impact assets"
+            description="A bridgeless cross-chain DEX for impact assets"
             link=""
             release="Coming 2024"
           />
