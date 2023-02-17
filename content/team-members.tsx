@@ -60,16 +60,16 @@ const teamArray = [
     linkedin: 'https://www.linkedin.com/in/eric-muckley/',
     twitter: '',
   },
-  {
-    advisor: true,
-    name: 'Alex Sosnowski',
-    title: 'Advisor - Token Design',
-    image: alex,
-    degree: 'BS Business Administration',
-    description: 'Current: Senior PM at Coinbase Cloud',
-    linkedin: 'https://www.linkedin.com/in/alexander-sosnowski/',
-    twitter: '',
-  },
+  // {
+  //   advisor: true,
+  //   name: 'Alex Sosnowski',
+  //   title: 'Advisor - Token Design',
+  //   image: alex,
+  //   degree: 'BS Business Administration',
+  //   description: 'Current: Senior PM at Coinbase Cloud',
+  //   linkedin: 'https://www.linkedin.com/in/alexander-sosnowski/',
+  //   twitter: '',
+  // },
 ];
 
 export default teamArray;
