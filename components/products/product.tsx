@@ -34,7 +34,7 @@ const Product = ({
             href={link}
             target="_blank"
             rel="noreferrer">
-            Learn More
+            Join Wait List
           </a>
         )}
         {release && <p className={styles.release}>{release}</p>}
@@ -46,7 +46,7 @@ const Product = ({
             href={link}
             target="_blank"
             rel="noreferrer">
-            Learn More
+            Wait List
           </a>
         )}
         {release && <p className={styles.release}>{release}</p>}
