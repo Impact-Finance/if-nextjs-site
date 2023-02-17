@@ -109,7 +109,7 @@ const Contact = () => {
             <form>
               <div className={styles.row1}>
                 <div className={styles.name}>
-                  <label htmlFor="name">Name</label>
+                  <label htmlFor="name">Name*</label>
                   <input
                     className={styles.inputBox}
                     type="text"
@@ -117,12 +117,13 @@ const Contact = () => {
                     onChange={handleName}
                     value={name}
                     placeholder="What you call yourself..."
+                    required
                   />
                 </div>
               </div>
               <div className={styles.row2}>
                 <div className={styles.email}>
-                  <label htmlFor="email">Email</label>
+                  <label htmlFor="email">Email*</label>
                   <input
                     className={styles.inputBox}
                     type="text"
@@ -130,6 +131,7 @@ const Contact = () => {
                     onChange={handleEmail}
                     value={email}
                     placeholder="Your email..."
+                    required
                   />
                 </div>
                 <div className={styles.organization}>
@@ -146,7 +148,7 @@ const Contact = () => {
               </div>
               <div className={styles.row3}>
                 <div className={styles.message}>
-                  <label htmlFor="message">Message</label>
+                  <label htmlFor="message">Message*</label>
                   <textarea
                     className={styles.inputBox}
                     id="message"
@@ -154,6 +156,7 @@ const Contact = () => {
                     onChange={handleMessage}
                     value={message}
                     placeholder="Tell us something..."
+                    required
                   />
                 </div>
               </div>
