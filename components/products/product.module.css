@@ -68,7 +68,9 @@
 }
 
 .link {
-  border: 1px solid rgba(var(--color-accent-1-rgb), 1);
+  border: none;
+  border-top: 1px solid rgba(var(--color-accent-1-rgb), 0.5);
+  border-bottom: 1px solid rgba(var(--color-accent-1-rgb), 0.5);
   border-radius: var(--border-radius);
   color: rgba(var(--color-accent-1-rgb), 1);
   background-color: rgba(var(--color-accent-1-rgb), 0.1);
@@ -78,9 +80,7 @@
 }
 
 .link:hover {
-  border: 1px solid rgba(var(--color-accent-1-rgb), 0.7);
-  color: rgba(var(--color-accent-1-rgb), 0.7);
-  background-color: rgba(var(--color-accent-1-rgb), 0.07);
+  filter: opacity(0.75);
 }
 
 .release {

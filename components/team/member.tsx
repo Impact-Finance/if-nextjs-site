@@ -27,7 +27,7 @@ const Member = ({ person }: MemberProps) => {
           <div className={styles.advisorText}>
             <h3 className={styles.name}>{person.name}</h3>
             <p className={styles.title}>{person.title}</p>
-            <p className={styles.degree}>{person.degree}</p>
+            <p className={styles.degree}>{person.description}</p>
             {person.advisor && (
               <p className={styles.socials}>
                 <a

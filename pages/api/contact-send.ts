@@ -1,11 +1,9 @@
-import { MongoClient } from 'mongodb';
 import type { NextApiRequest, NextApiResponse } from 'next';
+import nodemailer from 'nodemailer';
 
 type Data = {
   message: string;
 };
-
-const url: string = process.env.DB_CLIENT;
 
 export default async function handler(
   req: NextApiRequest,
@@ -13,16 +11,33 @@ export default async function handler(
 ) {
   if (req.method === 'POST') {
     try {
-      const data = req.body;
+      const { name, email, organization, message } = req.body;
 
-      const client = await MongoClient.connect(url);
-      const db = client.db();
+      const transporter = nodemailer.createTransport({
+        port: 465,
+        host: 'smtp.gmail.com',
+        auth: {
+          user: 'impact.finance.utility@gmail.com',
+          pass: process.env.GOOGLE_PW,
+        },
+        secure: true,
+      });
 
-      const contactCollection = db.collection('contact-form');
+      const mailData = {
+        from: 'impact.finance.utility@gmail.com',
+        to: 'info@impact-finance.io',
+        subject: `IF Contact Form Submission from ${name}`,
+        text:
+          message +
+          ' | Sent from: ' +
+          email +
+          ' | Organization: ' +
+          organization,
+        html: `<div>${message}</div><p>Sent from:
+        ${email}</p><p>Organization: ${organization}</p>`,
+      };
 
-      await contactCollection.insertOne(data);
-
-      client.close();
+      await transporter.sendMail(mailData);
 
       res.status(201).json({ message: 'Message received!' });
     } catch {
