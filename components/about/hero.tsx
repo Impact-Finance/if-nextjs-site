@@ -4,8 +4,8 @@ import { useState } from 'react';
 
 import mainBg from '@/public/site/main-bg.webp';
 import isoGraphic from '@/public/isometrics/iso-graphic.webp';
-import loading from '@/public/site/loading.webp';
 import styles from './hero.module.css';
+import Loader from '../layout/loader';
 
 interface HeroProps {
   focusScroll: () => void;
@@ -24,19 +24,8 @@ const Hero = ({ focusScroll }: HeroProps) => {
         sizes="100vw"
         priority
       />
-      {!isLoaded && (
-        <div className={styles.loadingContainer}>
-          <Image
-            className={styles.loading}
-            src={loading}
-            alt="loading-graphic"
-            fill
-            sizes="20vw"
-            priority
-          />
-        </div>
-      )}
       <div className={styles.graphicContainer}>
+        {!isLoaded && <Loader />}
         <Image
           className={styles.isoGraphic}
           src={isoGraphic}
