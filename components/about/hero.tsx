@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { Fade } from 'react-awesome-reveal';
 
-import mainBg from '@/public/site/main-bg.png';
-import isoGraphic from '@/public/isometrics/iso-graphic.png';
+import mainBg from '@/public/site/main-bg.webp';
+import isoGraphic from '@/public/isometrics/iso-graphic.webp';
 import styles from './hero.module.css';
 
 interface HeroProps {
