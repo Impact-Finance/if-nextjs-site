@@ -38,7 +38,7 @@ const teamArray = [
     description:
       'Cameron is a strategic thinker with years of experience designing and implementing AI- and blockchain-based systems for Fortune 500 companies.',
     linkedin: 'https://www.linkedin.com/in/cam-nili/',
-    twitter: 'https://twitter.com/krypto_kam_',
+    twitter: 'https://twitter.com/KryptoCameron',
   },
   {
     advisor: true,
