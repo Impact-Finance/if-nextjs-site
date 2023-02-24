@@ -1,12 +1,11 @@
 import { useRef } from 'react';
-import Head from 'next/head';
 
 import styles from '@/styles/Home.module.css';
 import Footer from '@/components/layout/footer';
 import Navbar from '@/components/layout/navbar';
 import SiteHeader from '@/components/layout/site-header';
 
-export default function Intheory() {
+export default function NotFound() {
   const portfolio = useRef<HTMLDivElement>(null);
   const team = useRef<HTMLDivElement>(null);
   const contact = useRef<HTMLDivElement>(null);
