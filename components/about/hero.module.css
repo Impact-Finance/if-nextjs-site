@@ -2,8 +2,8 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: 100vh;
   max-height: 1000px;
+  height: 100dvh;
   width: 100%;
   overflow: hidden;
   padding-right: 2rem;
