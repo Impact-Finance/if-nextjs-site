@@ -56,20 +56,20 @@ const teamArray = [
     title: 'Advisor - System Design',
     image: eric,
     degree: 'PhD Energy Science and Engineering',
-    description: 'Research Scientist, Citrine Informatics',
+    description: 'Director of Emerging Tech, M Corp',
     linkedin: 'https://www.linkedin.com/in/eric-muckley/',
     twitter: '',
   },
-  // {
-  //   advisor: true,
-  //   name: 'Alex Sosnowski',
-  //   title: 'Advisor - Token Design',
-  //   image: alex,
-  //   degree: 'BS Business Administration',
-  //   description: 'Senior PM, Coinbase Cloud',
-  //   linkedin: 'https://www.linkedin.com/in/alexander-sosnowski/',
-  //   twitter: '',
-  // },
+  {
+    advisor: true,
+    name: 'Alex Sosnowski',
+    title: 'Advisor - Token Design',
+    image: alex,
+    degree: 'BS Business Administration',
+    description: 'Senior PM, Coinbase Cloud',
+    linkedin: 'https://www.linkedin.com/in/alexander-sosnowski/',
+    twitter: '',
+  },
 ];
 
 export default teamArray;
